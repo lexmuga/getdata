@@ -26,7 +26,7 @@ The TIDYDATA Project  includes the following files:
 - 'codebook.txt'    :   The variables are described in this file.
     
 
-The entries in the file "tidydata.txt" are arranged 181 rows and 68 columns.
+The entries in the file "tidydata.txt" are arranged in 181 rows and 68 columns.
 =============================================================================
 
 The first row from the first column to the sixty-eighth column contains the
