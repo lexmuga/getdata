@@ -1,0 +1,102 @@
+TidyData Set Code Book:     A Project for the course Getting and Cleaning Data
+                            of Coursera
+
+January 23, 2015
+A codebook prepared by Felix P. Muga II on the tidy data set submitted for the 
+course project of the coursera course “Getting and Cleaning Data”. Each of the 
+entries of this tidy data set from Row002 to Row181 and Col03 to Col68 is the 
+average measurement of the mean measurements or the standard deviation measurements 
+of each activity and of each subject. The original data set is obtained from 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+of the project “Human Activity Recognition Using Smartphones Data Set”  
+of the University of California, Irvine. 
+See http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+If you have questions about this tidy data set, please call Lex Muga at 63-908-8945643 
+or email: lexmuga@gmail.com.
+
+The tidy data set has 181 rows and 68 columns.
+
+Row001 contains the column names of the variables. These are:
+
+	Col01	subjectCode                     Each entry from Row002 : Row181
+                                            in Col01 is one of the 30 integer  
+                                            values from 1 : 30 
+
+	Col02	activityLabel                   Each entry from Row002 : Row181 is
+                                            one of the 6 character strings
+                                                WALKING
+                                                WALKING_UPSTAIRS
+                                                WALKING_DOWNSTAIRS
+                                                SITTING
+                                                STANDING
+                                                LAYING
+
+ 	Col03	tBodyAcc.mean...X               Each of Col03 : Col35 contains the
+	Col04	tBodyAcc.mean...Y               average of the mean measurements
+	Col05	tBodyAcc.mean...Z               for each activity and for each 
+	Col06	tGravityAcc.mean...X            subject. The value of each entry  
+	Col07	tGravityAcc.mean...Y            is numeric between -1 to 1.
+	Col08	tGravityAcc.mean...Z 
+	Col09	tBodyAccJerk.mean...X 
+	Col10	tBodyAccJerk.mean...Y 
+	Col11	tBodyAccJerk.mean...Z 
+	Col12	tBodyGyro.mean...X
+	Col13	tBodyGyro.mean...Y 
+	Col14	tBodyGyro.mean...Z 
+	Col15	tBodyGyroJerk.mean...X 
+	Col16	tBodyGyroJerk.mean...Y 
+	Col17	tBodyGyroJerk.mean...Z
+	Col18	tBodyAccMag.mean.. 
+	Col19	tGravityAccMag.mean.. 
+	Col20	tBodyAccJerkMag.mean.. 
+	Col21	tBodyGyroMag.mean.. 
+	Col22	tBodyGyroJerkMag.mean.. 
+	Col23	fBodyAcc.mean...X
+	Col24	fBodyAcc.mean...Y 
+	Col25	fBodyAcc.mean...Z 
+	Col26	fBodyAccJerk.mean...X 		
+	Col27	fBodyAccJerk.mean...Y 		
+	Col28	fBodyAccJerk.mean...Z 		
+	Col29	fBodyGyro.mean...X			
+	Col30	fBodyGyro.mean...Y 
+	Col31	fBodyGyro.mean...Z 
+	Col32	fBodyAccMag.mean.. 
+	Col33	fBodyBodyAccJerkMag.mean.. 
+	Col34	fBodyBodyGyroMag.mean.. 
+	Col35	fBodyBodyGyroJerkMag.mean..
+
+	Col36	tBodyAcc.std...X                 Each of Col26 : Col68 contains
+	Col37	tBodyAcc.std...Y                 the average of the measurements
+	Col38	tBodyAcc.std...Z                 of the standard deviation for 
+	Col39	tGravityAcc.std...X              each activity and for each  
+	Col40	tGravityAcc.std...Y              subject. The value of each entry 
+	Col41	tGravityAcc.std...Z              is numeric between -1 to 1.
+	Col42	tBodyAccJerk.std...X 
+	Col43	tBodyAccJerk.std...Y 
+	Col44	tBodyAccJerk.std...Z 
+	Col45	tBodyGyro.std...X 
+	Col46	tBodyGyro.std...Y 
+	Col47	tBodyGyro.std...Z 
+	Col48	tBodyGyroJerk.std...X
+	Col49	tBodyGyroJerk.std...Y 
+	Col50	tBodyGyroJerk.std...Z 
+	Col51	tBodyAccMag.std.. 
+	Col52	tGravityAccMag.std.. 
+	Col53	tBodyAccJerkMag.std.. 
+	Col54	tBodyGyroMag.std.. 
+	Col55	tBodyGyroJerkMag.std..
+	Col56	fBodyAcc.std...X 
+	Col57	fBodyAcc.std...Y 
+	Col58	fBodyAcc.std...Z 
+	Col59	fBodyAccJerk.std...X 
+	Col60	fBodyAccJerk.std...Y 
+	Col61	fBodyAccJerk.std...Z 
+	Col62	fBodyGyro.std...X
+	Col63	fBodyGyro.std...Y 
+	Col64	fBodyGyro.std...Z 
+	Col65	fBodyAccMag.std.. 
+	Col66	fBodyBodyAccJerkMag.std.. 
+	Col67	fBodyBodyGyroMag.std.. 
+	Col68	fBodyBodyGyroJerkMag.std..
+
