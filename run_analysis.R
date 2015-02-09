@@ -876,5 +876,5 @@ write.table(data2, file="tidydata.txt", row.name = FALSE)
 ## and of each subject
 ##
 ############################################################
-##      END-FILE-FILE run_analysis.R
+##      END-OF-FILE run_analysis.R
 ############################################################
