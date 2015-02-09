@@ -1,7 +1,9 @@
 TidyData Set Code Book:     A Project for the course Getting and Cleaning Data
                             of Coursera
 
-January 23, 2015
+updated: 9 February 2015
+
+version 1: January 23, 2015
 A codebook prepared by Felix P. Muga II on the tidy data set submitted for the 
 course project of the coursera course “Getting and Cleaning Data”. Each of the 
 entries of this tidy data set from Row002 to Row181 and Col03 to Col68 is the 
@@ -32,71 +34,71 @@ Row001 contains the column names of the variables. These are:
                                                 STANDING
                                                 LAYING
 
- 	Col03	tBodyAcc.mean...X               Each of Col03 : Col35 contains the
-	Col04	tBodyAcc.mean...Y               average of the mean measurements
-	Col05	tBodyAcc.mean...Z               for each activity and for each 
-	Col06	tGravityAcc.mean...X            subject. The value of each entry  
-	Col07	tGravityAcc.mean...Y            is numeric between -1 to 1.
-	Col08	tGravityAcc.mean...Z 
-	Col09	tBodyAccJerk.mean...X 
-	Col10	tBodyAccJerk.mean...Y 
-	Col11	tBodyAccJerk.mean...Z 
-	Col12	tBodyGyro.mean...X
-	Col13	tBodyGyro.mean...Y 
-	Col14	tBodyGyro.mean...Z 
-	Col15	tBodyGyroJerk.mean...X 
-	Col16	tBodyGyroJerk.mean...Y 
-	Col17	tBodyGyroJerk.mean...Z
-	Col18	tBodyAccMag.mean.. 
-	Col19	tGravityAccMag.mean.. 
-	Col20	tBodyAccJerkMag.mean.. 
-	Col21	tBodyGyroMag.mean.. 
-	Col22	tBodyGyroJerkMag.mean.. 
-	Col23	fBodyAcc.mean...X
-	Col24	fBodyAcc.mean...Y 
-	Col25	fBodyAcc.mean...Z 
-	Col26	fBodyAccJerk.mean...X 		
-	Col27	fBodyAccJerk.mean...Y 		
-	Col28	fBodyAccJerk.mean...Z 		
-	Col29	fBodyGyro.mean...X			
-	Col30	fBodyGyro.mean...Y 
-	Col31	fBodyGyro.mean...Z 
-	Col32	fBodyAccMag.mean.. 
-	Col33	fBodyBodyAccJerkMag.mean.. 
-	Col34	fBodyBodyGyroMag.mean.. 
-	Col35	fBodyBodyGyroJerkMag.mean..
+Col03	tBodyAccmeanX               Each of Col03 : Col35 contains a
+Col04	tBodyAccmeanY               numeric value between -1 and 1
+Col05	tBodyAccmeanZ               for each activity (activityLabel)  
+Col06	tGravityAccmeanX            and for each subject (subjectCode). 
+Col07	tGravityAccmeanY            These values are obtained from the
+Col08	tGravityAccmeanZ            desiredData dataset which consists
+Col09	tBodyAccJerkmeanX           of the averages in each of Col03 to Col35
+Col10	tBodyAccJerkmeanY           of the mean measurements in each column 
+Col11	tBodyAccJerkmeanZ           for each activity and for each
+Col12	tBodyGyromeanX              subject using the group_by() and
+Col13	tBodyGyromeanY              and summarise_each() functions made
+Col14	tBodyGyromeanZ              possible by the chaining %>% method.
+Col15	tBodyGyroJerkmeanX 
+Col16	tBodyGyroJerkmeanY 
+Col17	tBodyGyroJerkmeanZ
+Col18	tBodyAccMagmean 
+Col19	tGravityAccMagmean
+Col20	tBodyAccJerkMagmean
+Col21	tBodyGyroMagmean
+Col22	tBodyGyroJerkMagmean
+Col23	fBodyAccmeanX
+Col24	fBodyAccmeanY 
+Col25	fBodyAccmeanZ 
+Col26	fBodyAccJerkmeanX 		
+Col27	fBodyAccJerkmeanY 		
+Col28	fBodyAccJerkmeanZ 		
+Col29	fBodyGyromeanX			
+Col30	fBodyGyromeanY 
+Col31	fBodyGyromeanZ 
+Col32	fBodyAccMagmean
+Col33	fBodyBodyAccJerkMagmean
+Col34	fBodyBodyGyroMagmean
+Col35	fBodyBodyGyroJerkMagmean
 
-	Col36	tBodyAcc.std...X                 Each of Col26 : Col68 contains
-	Col37	tBodyAcc.std...Y                 the average of the measurements
-	Col38	tBodyAcc.std...Z                 of the standard deviation for 
-	Col39	tGravityAcc.std...X              each activity and for each  
-	Col40	tGravityAcc.std...Y              subject. The value of each entry 
-	Col41	tGravityAcc.std...Z              is numeric between -1 to 1.
-	Col42	tBodyAccJerk.std...X 
-	Col43	tBodyAccJerk.std...Y 
-	Col44	tBodyAccJerk.std...Z 
-	Col45	tBodyGyro.std...X 
-	Col46	tBodyGyro.std...Y 
-	Col47	tBodyGyro.std...Z 
-	Col48	tBodyGyroJerk.std...X
-	Col49	tBodyGyroJerk.std...Y 
-	Col50	tBodyGyroJerk.std...Z 
-	Col51	tBodyAccMag.std.. 
-	Col52	tGravityAccMag.std.. 
-	Col53	tBodyAccJerkMag.std.. 
-	Col54	tBodyGyroMag.std.. 
-	Col55	tBodyGyroJerkMag.std..
-	Col56	fBodyAcc.std...X 
-	Col57	fBodyAcc.std...Y 
-	Col58	fBodyAcc.std...Z 
-	Col59	fBodyAccJerk.std...X 
-	Col60	fBodyAccJerk.std...Y 
-	Col61	fBodyAccJerk.std...Z 
-	Col62	fBodyGyro.std...X
-	Col63	fBodyGyro.std...Y 
-	Col64	fBodyGyro.std...Z 
-	Col65	fBodyAccMag.std.. 
-	Col66	fBodyBodyAccJerkMag.std.. 
-	Col67	fBodyBodyGyroMag.std.. 
-	Col68	fBodyBodyGyroJerkMag.std..
+Col36	tBodyAccstdX                 Each of Col26 : Col68 contains
+Col37	tBodyAccstdY                 a numeric value between -1 and 1
+Col38	tBodyAccstdZ                 for each activity (activityLabel)
+Col39	tGravityAccstdX              and for each subject (subjectCode). 
+Col40	tGravityAccstdY              These values are obtained from 
+Col41	tGravityAccstdZ              desiredData  which consists
+Col42	tBodyAccJerkstdX             of the averages in each of Col26 to 
+Col43	tBodyAccJerkstdY             Col68 of the standard deviation
+Col44	tBodyAccJerkstdZ             measurements in each column for 
+Col45	tBodyGyrostdX                each activity and for each subject
+Col46	tBodyGyrostdY                using the group_by() and  the
+Col47	tBodyGyrostdZ                summarise_each() functions made
+Col48	tBodyGyroJerkstdX            possible by the chaining %>% method.
+Col49	tBodyGyroJerkstdY 
+Col50	tBodyGyroJerkstdZ 
+Col51	tBodyAccMagstd 
+Col52	tGravityAccMagstd
+Col53	tBodyAccJerkMagstd
+Col54	tBodyGyroMagstd
+Col55	tBodyGyroJerkMagstd
+Col56	fBodyAccstdX 
+Col57	fBodyAccstdY 
+Col58	fBodyAccstdZ 
+Col59	fBodyAccJerkstdX 
+Col60	fBodyAccJerkstdY 
+Col61	fBodyAccJerkstdZ 
+Col62	fBodyGyrostdX
+Col63	fBodyGyrostdY 
+Col64	fBodyGyrostdZ 
+Col65	fBodyAccMagstd
+Col66	fBodyBodyAccJerkMagstd
+Col67	fBodyBodyGyroMagstd
+Col68	fBodyBodyGyroJerkMagstd
 
